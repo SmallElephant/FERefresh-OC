@@ -15,13 +15,13 @@
 		C5034F751C79ACF300E0BF07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5034F731C79ACF300E0BF07 /* LaunchScreen.storyboard */; };
 		C5034F801C79ACF300E0BF07 /* FERefreshTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5034F7F1C79ACF300E0BF07 /* FERefreshTests.m */; };
 		C5034F8B1C79ACF300E0BF07 /* FERefreshUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5034F8A1C79ACF300E0BF07 /* FERefreshUITests.m */; };
-		C5034FA01C7AC2BB00E0BF07 /* FEHeaderRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C5034F9F1C7AC2BB00E0BF07 /* FEHeaderRefresh.m */; };
 		C5034FAF1C7CA73700E0BF07 /* UIView+FEViewReSize.m in Sources */ = {isa = PBXBuildFile; fileRef = C5034FAE1C7CA73700E0BF07 /* UIView+FEViewReSize.m */; };
 		C5034FB21C7D4F5A00E0BF07 /* FENormalHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5034FB11C7D4F5A00E0BF07 /* FENormalHeaderView.m */; };
 		C5034FB51C7DE6BB00E0BF07 /* FERefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5034FB41C7DE6BB00E0BF07 /* FERefreshView.m */; };
 		C5034FB81C7E986F00E0BF07 /* FERefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C5034FB71C7E986F00E0BF07 /* FERefresh.m */; };
 		C5034FBB1C7E988A00E0BF07 /* FEFooterRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C5034FBA1C7E988A00E0BF07 /* FEFooterRefresh.m */; };
 		C5034FBE1C7E9F2F00E0BF07 /* FENormalFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5034FBD1C7E9F2F00E0BF07 /* FENormalFooterView.m */; };
+		C5034FC41C7F2FF300E0BF07 /* FEHeaderRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C5034FC31C7F2FF300E0BF07 /* FEHeaderRefresh.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +58,6 @@
 		C5034F861C79ACF300E0BF07 /* FERefreshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FERefreshUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5034F8A1C79ACF300E0BF07 /* FERefreshUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FERefreshUITests.m; sourceTree = "<group>"; };
 		C5034F8C1C79ACF300E0BF07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C5034F9E1C7AC2BB00E0BF07 /* FEHeaderRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEHeaderRefresh.h; path = ../FEHeaderRefresh.h; sourceTree = "<group>"; };
-		C5034F9F1C7AC2BB00E0BF07 /* FEHeaderRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEHeaderRefresh.m; path = ../FEHeaderRefresh.m; sourceTree = "<group>"; };
 		C5034FAD1C7CA73700E0BF07 /* UIView+FEViewReSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FEViewReSize.h"; sourceTree = "<group>"; };
 		C5034FAE1C7CA73700E0BF07 /* UIView+FEViewReSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FEViewReSize.m"; sourceTree = "<group>"; };
 		C5034FB01C7D4F5A00E0BF07 /* FENormalHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FENormalHeaderView.h; sourceTree = "<group>"; };
@@ -72,6 +70,8 @@
 		C5034FBA1C7E988A00E0BF07 /* FEFooterRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEFooterRefresh.m; sourceTree = "<group>"; };
 		C5034FBC1C7E9F2F00E0BF07 /* FENormalFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FENormalFooterView.h; sourceTree = "<group>"; };
 		C5034FBD1C7E9F2F00E0BF07 /* FENormalFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FENormalFooterView.m; sourceTree = "<group>"; };
+		C5034FC21C7F2FF300E0BF07 /* FEHeaderRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEHeaderRefresh.h; sourceTree = "<group>"; };
+		C5034FC31C7F2FF300E0BF07 /* FEHeaderRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEHeaderRefresh.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,8 +168,8 @@
 			children = (
 				C5034FB61C7E986F00E0BF07 /* FERefresh.h */,
 				C5034FB71C7E986F00E0BF07 /* FERefresh.m */,
-				C5034F9E1C7AC2BB00E0BF07 /* FEHeaderRefresh.h */,
-				C5034F9F1C7AC2BB00E0BF07 /* FEHeaderRefresh.m */,
+				C5034FC21C7F2FF300E0BF07 /* FEHeaderRefresh.h */,
+				C5034FC31C7F2FF300E0BF07 /* FEHeaderRefresh.m */,
 				C5034FB91C7E988A00E0BF07 /* FEFooterRefresh.h */,
 				C5034FBA1C7E988A00E0BF07 /* FEFooterRefresh.m */,
 				C5034FB31C7DE6BB00E0BF07 /* FERefreshView.h */,
@@ -325,10 +325,10 @@
 				C5034F6D1C79ACF300E0BF07 /* ViewController.m in Sources */,
 				C5034F6A1C79ACF300E0BF07 /* AppDelegate.m in Sources */,
 				C5034FBE1C7E9F2F00E0BF07 /* FENormalFooterView.m in Sources */,
+				C5034FC41C7F2FF300E0BF07 /* FEHeaderRefresh.m in Sources */,
 				C5034FAF1C7CA73700E0BF07 /* UIView+FEViewReSize.m in Sources */,
 				C5034F671C79ACF300E0BF07 /* main.m in Sources */,
 				C5034FB21C7D4F5A00E0BF07 /* FENormalHeaderView.m in Sources */,
-				C5034FA01C7AC2BB00E0BF07 /* FEHeaderRefresh.m in Sources */,
 				C5034FB51C7DE6BB00E0BF07 /* FERefreshView.m in Sources */,
 				C5034FBB1C7E988A00E0BF07 /* FEFooterRefresh.m in Sources */,
 			);
@@ -554,6 +554,7 @@
 				C5034F911C79ACF300E0BF07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5034F921C79ACF300E0BF07 /* Build configuration list for PBXNativeTarget "FERefreshTests" */ = {
 			isa = XCConfigurationList;
@@ -562,6 +563,7 @@
 				C5034F941C79ACF300E0BF07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5034F951C79ACF300E0BF07 /* Build configuration list for PBXNativeTarget "FERefreshUITests" */ = {
 			isa = XCConfigurationList;
@@ -570,6 +572,7 @@
 				C5034F971C79ACF300E0BF07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
