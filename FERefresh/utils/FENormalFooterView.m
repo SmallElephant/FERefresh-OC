@@ -7,14 +7,11 @@
 //
 
 #import "FENormalFooterView.h"
-#import "UIView+FEViewReSize.h"
 static  NSString * const FooterPulling=@"上拉刷新...";
 static  NSString * const FooterRefreshing=@"松开刷新...";
 static  NSString * const FooterEnding=@"正在刷新...";
 
 @interface FENormalFooterView()
-
-
 
 @end
 
@@ -27,7 +24,7 @@ static  NSString * const FooterEnding=@"正在刷新...";
         [self insertSubview:self.activityView atIndex:0];
         self.imageView.frame=CGRectMake(frame.size.width/2-50,5 ,20, 30);
         [self insertSubview:self.imageView atIndex:0];
-        self.contentLabel.frame=CGRectMake(self.imageView.right+15, 5, 150, 30);
+        self.contentLabel.frame=CGRectMake(frame.size.width/2-5, 5, 150, 30);
         self.contentLabel.text=FooterPulling;
         [self insertSubview:self.contentLabel atIndex:0];
     }

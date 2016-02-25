@@ -66,7 +66,6 @@ static const CGFloat HeaderHeight=40;
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
     
     if ([keyPath isEqualToString:@"contentOffset"]) {
-        
         CGPoint contentOffset=[[change valueForKey:NSKeyValueChangeNewKey] CGPointValue];
         if (self.relateScrollView.dragging) {
             if (!isRefresh) {
