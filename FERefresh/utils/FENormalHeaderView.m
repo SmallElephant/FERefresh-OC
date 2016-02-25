@@ -7,7 +7,6 @@
 //
 
 #import "FENormalHeaderView.h"
-#import "UIView+FEViewReSize.h"
 static  NSString * const HeaderPulling=@"下拉刷新..";
 static  NSString * const HeaderRefreshing=@"松开刷新..";
 static  NSString * const HeaderRefreshEnding=@"正在刷新..";
@@ -25,7 +24,7 @@ static  NSString * const HeaderRefreshEnding=@"正在刷新..";
         [self insertSubview:self.activityView atIndex:0];
         self.imageView.frame=CGRectMake(frame.size.width/2-50,5 ,20, 30);
         [self insertSubview:self.imageView atIndex:0];
-        self.contentLabel.frame=CGRectMake(self.imageView.right+15, 5, 150, 30);
+        self.contentLabel.frame=CGRectMake(frame.size.width/2-5, 5, 150, 30);
         self.contentLabel.text=HeaderPulling;
         [self insertSubview:self.contentLabel atIndex:0];
     }

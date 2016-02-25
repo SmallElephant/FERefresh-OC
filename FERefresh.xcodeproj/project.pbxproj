@@ -15,7 +15,6 @@
 		C5034F751C79ACF300E0BF07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5034F731C79ACF300E0BF07 /* LaunchScreen.storyboard */; };
 		C5034F801C79ACF300E0BF07 /* FERefreshTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5034F7F1C79ACF300E0BF07 /* FERefreshTests.m */; };
 		C5034F8B1C79ACF300E0BF07 /* FERefreshUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5034F8A1C79ACF300E0BF07 /* FERefreshUITests.m */; };
-		C5034FAF1C7CA73700E0BF07 /* UIView+FEViewReSize.m in Sources */ = {isa = PBXBuildFile; fileRef = C5034FAE1C7CA73700E0BF07 /* UIView+FEViewReSize.m */; };
 		C5034FB21C7D4F5A00E0BF07 /* FENormalHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5034FB11C7D4F5A00E0BF07 /* FENormalHeaderView.m */; };
 		C5034FB51C7DE6BB00E0BF07 /* FERefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5034FB41C7DE6BB00E0BF07 /* FERefreshView.m */; };
 		C5034FB81C7E986F00E0BF07 /* FERefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C5034FB71C7E986F00E0BF07 /* FERefresh.m */; };
@@ -58,8 +57,6 @@
 		C5034F861C79ACF300E0BF07 /* FERefreshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FERefreshUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5034F8A1C79ACF300E0BF07 /* FERefreshUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FERefreshUITests.m; sourceTree = "<group>"; };
 		C5034F8C1C79ACF300E0BF07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C5034FAD1C7CA73700E0BF07 /* UIView+FEViewReSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FEViewReSize.h"; sourceTree = "<group>"; };
-		C5034FAE1C7CA73700E0BF07 /* UIView+FEViewReSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FEViewReSize.m"; sourceTree = "<group>"; };
 		C5034FB01C7D4F5A00E0BF07 /* FENormalHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FENormalHeaderView.h; sourceTree = "<group>"; };
 		C5034FB11C7D4F5A00E0BF07 /* FENormalHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FENormalHeaderView.m; sourceTree = "<group>"; };
 		C5034FB31C7DE6BB00E0BF07 /* FERefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FERefreshView.h; sourceTree = "<group>"; };
@@ -122,7 +119,6 @@
 		C5034F641C79ACF300E0BF07 /* FERefresh */ = {
 			isa = PBXGroup;
 			children = (
-				C5034FA91C7CA6F000E0BF07 /* category */,
 				C5034FA21C7AC2F100E0BF07 /* utils */,
 				C5034F681C79ACF300E0BF07 /* AppDelegate.h */,
 				C5034F691C79ACF300E0BF07 /* AppDelegate.m */,
@@ -180,15 +176,6 @@
 				C5034FBD1C7E9F2F00E0BF07 /* FENormalFooterView.m */,
 			);
 			path = utils;
-			sourceTree = "<group>";
-		};
-		C5034FA91C7CA6F000E0BF07 /* category */ = {
-			isa = PBXGroup;
-			children = (
-				C5034FAD1C7CA73700E0BF07 /* UIView+FEViewReSize.h */,
-				C5034FAE1C7CA73700E0BF07 /* UIView+FEViewReSize.m */,
-			);
-			name = category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,7 +313,6 @@
 				C5034F6A1C79ACF300E0BF07 /* AppDelegate.m in Sources */,
 				C5034FBE1C7E9F2F00E0BF07 /* FENormalFooterView.m in Sources */,
 				C5034FC41C7F2FF300E0BF07 /* FEHeaderRefresh.m in Sources */,
-				C5034FAF1C7CA73700E0BF07 /* UIView+FEViewReSize.m in Sources */,
 				C5034F671C79ACF300E0BF07 /* main.m in Sources */,
 				C5034FB21C7D4F5A00E0BF07 /* FENormalHeaderView.m in Sources */,
 				C5034FB51C7DE6BB00E0BF07 /* FERefreshView.m in Sources */,
