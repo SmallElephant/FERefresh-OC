@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
   # s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/SmallElephant/FERefresh.git", :tag => "1.0.0" }
   s.source_files  = "Classes", "FERefresh/utils/*.{h,m}"
-  # s.requires_arc = true
+  s.requires_arc = true
+  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 
 end

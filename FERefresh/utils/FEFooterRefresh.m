@@ -37,7 +37,6 @@ static const CGFloat HeaderHeight=40;
 
 -(void)beginRefreshing{
     if (!isRefresh) {
-        NSLog(@"开始刷新");
         isRefresh=YES;
         currentState=FERefreshStateRefresing;
         [self.delegate changeRefreshView:FERefreshStateRefresing];
