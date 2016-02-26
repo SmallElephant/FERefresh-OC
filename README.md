@@ -54,3 +54,6 @@ typedef NS_ENUM(NSUInteger,FERefreshState){
     FERefreshStateEnd//结束
 };
 </code></pre>
+
+##Dynamic effect diagram(动态效果图)
+![image](https://github.com/SmallElephant/FERefresh/blob/master/FERefresh.gif)
