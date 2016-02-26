@@ -33,11 +33,6 @@ static  NSString * const FooterEnding=@"正在刷新...";
 
 #pragma mark - FERefreshDelegate
 
-
--(void)setUpRefreshView:(CGRect)frame{
-    
-}
-
 -(void)changeRefreshView:(FERefreshState)refreshState{
     switch (refreshState) {
         case FERefreshStateBegin:
