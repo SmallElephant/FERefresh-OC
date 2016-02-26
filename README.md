@@ -1,8 +1,8 @@
 # FERefresh
 最简单的下拉刷新，自定义视图，轻松解耦
 #Header and  Footer Refresh for UIScrollView
-#HeaderRefresh(头部刷新)
-`
+##HeaderRefresh(头部刷新)
+
     self.headerRefresh=[[FEHeaderRefresh alloc]initWithScrollView:self.tableView];
     [self.headerRefresh setUpRefreshView:@"FENormalHeaderView"];
     __weak FEHeaderRefresh *weakHeaderRefresh=self.headerRefresh;
@@ -18,9 +18,9 @@
             [weakHeaderRefresh stopRefreshing];
         });
     }];
-`
+
 #FooterRefresh(底部刷新)
-`
+
     self.footerRefresh=[[FEFooterRefresh alloc]initWithScrollView:self.tableView];
     [self.footerRefresh setUpRefreshView];
     
@@ -35,9 +35,9 @@
             [weakFooterRefresh stopRefreshing];
         });
     }];
-`
-#Normal RefreshView(FENormalHeaderView and FENormalFooterView)
-`
+
+##Normal RefreshView(FENormalHeaderView and FENormalFooterView)
+
 typedef NS_ENUM(NSUInteger,FERefreshState){
     FERefreshStateBegin=0,//初始化
     FERefreshStateRefresing,//刷新
@@ -45,7 +45,6 @@ typedef NS_ENUM(NSUInteger,FERefreshState){
     FERefreshStateDragRepeat,//反复拉动
     FERefreshStateEnd//结束
 };
-`
 
 
 通过继承
