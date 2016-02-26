@@ -36,8 +36,12 @@
         });
     }];
 
-##Custom RefreshView(FENormalHeaderView and FENormalFooterView)
-`
+##Custom RefreshView
+Two Step:
++ Inheritance FERefreshView(继承FERefreshView)
++ setupRefreshView（刷新的时候设置自定View的名字即可）
+ -(void)setUpRefreshView:(NSString *)refreshClass;
+<pre></code>
 typedef NS_ENUM(NSUInteger,FERefreshState){
     FERefreshStateBegin=0,//初始化
     FERefreshStateRefresing,//刷新
@@ -45,11 +49,4 @@ typedef NS_ENUM(NSUInteger,FERefreshState){
     FERefreshStateDragRepeat,//反复拉动
     FERefreshStateEnd//结束
 };
-`
-
-+ Inheritance FERefreshView
-+ setupRefreshView
- -(void)setUpRefreshView:(NSString *)refreshClass;
-
-
-
+</code></pre>
