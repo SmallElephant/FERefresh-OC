@@ -19,11 +19,10 @@
         });
     }];
 
-#FooterRefresh(底部刷新)
+##FooterRefresh(底部刷新)
 
     self.footerRefresh=[[FEFooterRefresh alloc]initWithScrollView:self.tableView];
     [self.footerRefresh setUpRefreshView];
-    
     __weak FEFooterRefresh *weakFooterRefresh=self.footerRefresh;
     [self.footerRefresh addRefreshingBlock:^{
         dispatch_time_t delayTime=dispatch_time(DISPATCH_TIME_NOW, 2*NSEC_PER_SEC);
@@ -36,7 +35,7 @@
         });
     }];
 
-##Normal RefreshView(FENormalHeaderView and FENormalFooterView)
+##Custom RefreshView(FENormalHeaderView and FENormalFooterView)
 
 typedef NS_ENUM(NSUInteger,FERefreshState){
     FERefreshStateBegin=0,//初始化
@@ -46,11 +45,9 @@ typedef NS_ENUM(NSUInteger,FERefreshState){
     FERefreshStateEnd//结束
 };
 
++ Inheritance FERefreshView
++ setupRefreshView
+ -(void)setUpRefreshView:(NSString *)refreshClass;
 
-通过继承
-By Inheritance FERefreshView，We can customize RefreshView，through FERefreshState update customView:
-`
--(void)setUpRefreshView:(NSString *)refreshClass;
-`
 
 
