@@ -40,7 +40,11 @@
 Two Step:
 + Inheritance FERefreshView(继承FERefreshView)
 + setupRefreshView（刷新的时候设置自定View的名字即可）
+<pre><code>
  -(void)setUpRefreshView:(NSString *)refreshClass;
+</code></pre>
+
+Through FERefresh update Custom View:
 <pre></code>
 typedef NS_ENUM(NSUInteger,FERefreshState){
     FERefreshStateBegin=0,//初始化
